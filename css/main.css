@@ -104,6 +104,7 @@ a:focus {
   font-size: 36px;
   margin-top: 0;
   margin-bottom: 20px;
+  margin-top: 55px;
 }
 
 .media>.pull-left{
@@ -597,7 +598,9 @@ input.search-form:hover {
 }
 
 .recent-work-wrap img{
-  width: 100%;
+  width: 97%;
+  height: 220px;
+  outline: 12px solid #f5f5f5;
 }
 
 .recent-work-wrap .recent-work-inner{
