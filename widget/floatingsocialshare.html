@@ -4,12 +4,13 @@
 <script>
     $( document ).ready(function() {
         var place =$("#{$_name}").attr('data-place');
+        var weburl =$("#{$_name}").attr('data-url');
         // console.log(place);
         $("body").floatingSocialShare({
             buttons: ["facebook", "twitter", "google-plus", "linkedin", "pinterest"],
             twitter_counter: true,
             text: "share with: ",
-            url: "http://xepan.org",
+            url: weburl,
             place: place,
             popup_width: 400,
             popup_height: 300,

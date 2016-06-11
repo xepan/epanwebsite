@@ -8,10 +8,18 @@
                       <div class="xepan-tool-option">
                         <td class="xepan-tool-option-title">Place</td>
                         <td class="xepan-tool-option-value">
-                          <select id="place-position" data-attr="layout" value="true">
+                          <select id="place-position" data-attr="data-palce" value="true">
                             <option value="top-left">Top to Left</option>
                             <option value="top-right">Top to Right</option>
                           </select>
+                        </td>
+                      </div>
+                    </tr>
+                    <tr>
+                      <div class="xepan-tool-option">
+                        <td class="xepan-tool-option-title">website Url</td>
+                        <td class="xepan-tool-option-value"> 
+                          <input id="web-url" data-attr="website_url"/>
                         </td>
                       </div>
                     </tr>
@@ -21,8 +29,12 @@
     </div>                
 <script type="text/javascript">
     $('#place-position').on('change',function(){
-    $(current_selected_component).attr('data-place',$(this).val());
-    $(current_selected_component).univ().errorMessage('Save and reload Page to see changes');
-});
+        $(current_selected_component).attr('data-place',$(this).val());
+        $(current_selected_component).univ().errorMessage('Save and reload Page to see changes');
+    });
+    $('#web-url').on('change',function(){
+        $(current_selected_component).attr('data-url',$(this).val());
+        $(current_selected_component).univ().errorMessage('Save and reload Page to see changes');
+    });
 </script>
 </div>
