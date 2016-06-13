@@ -290,7 +290,7 @@ input.search-form:hover {
 }
 
 .navbar-inverse .navbar-nav > li > a:hover{
-	background-color: #c52d2f;
+  background-color: #c52d2f;
   color: #fff;
 }
 
@@ -2500,8 +2500,17 @@ shortcodes page css
   margin-left: 15px;
 }
 
+/*===== Overwrite Css Class & Property=========== */
+.top-bar{
+  padding: 0px;
+}
+.navbar{
+  padding: 0px;
+}
 
-
+#main-slider .carousel .item{
+  height:550px;
+}
 
 
 
