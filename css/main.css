@@ -595,6 +595,7 @@ input.search-form:hover {
 
 .recent-work-wrap {
   position: relative;
+  margin-bottom: 20px;
 }
 
 .recent-work-wrap img{
@@ -2510,6 +2511,11 @@ shortcodes page css
 
 #main-slider .carousel .item{
   height:550px;
+}
+
+.xepan-recent-work-col{
+  padding-left: 0px !important;
+  padding-right: 0px !important;
 }
 
 
