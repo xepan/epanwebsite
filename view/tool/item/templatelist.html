@@ -7,7 +7,7 @@
         <div class="recent-work-wrap"><img src="{$first_image}" alt="" onerror1="this.src='vendor/xepan/commerce/templates/view/tool/cart/images/not-found.png'" class="img-responsive"/>
           <div class="overlay">
             <div style="height:100%;" class="recent-work-inner text-center">
-              <h3 style="height: 80px;"><a href="#">{$name}</a></h3>
+              <h3 style="height: 80px;"><a href="details&commerce_item_id={$id}">{$name}</a></h3>
               <div style="border:2px solid white;" data-id="{$id}" class="btn btn-block btn-lg xepan-change-template" onclick = $.univ.newWindow('http://{$sku}.epan.in')>Live Preview</div>
                 {specification_wrapper}
                         {specification}
