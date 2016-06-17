@@ -23,6 +23,14 @@
                         </td>
                       </div>
                     </tr>
+                    <tr>
+                      <div class="xepan-tool-option">
+                        <td class="xepan-tool-option-title">Description</td>
+                        <td class="xepan-tool-option-value"> 
+                          <input id="website-description" data-attr="website_url"/>
+                        </td>
+                      </div>
+                    </tr>
                 </table>
             </div>
         </div>
@@ -34,6 +42,10 @@
     });
     $('#web-url').on('change',function(){
         $(current_selected_component).attr('data-url',$(this).val());
+        $(current_selected_component).univ().errorMessage('Save and reload Page to see changes');
+    });
+    $('#website-description').on('change',function(){
+        $(current_selected_component).attr('data-description',$(this).val());
         $(current_selected_component).univ().errorMessage('Save and reload Page to see changes');
     });
 </script>
