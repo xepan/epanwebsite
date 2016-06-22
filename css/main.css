@@ -2527,6 +2527,9 @@ shortcodes page css
 .navbar-nav{
   margin-top: 0px!important;
 }
+.services-wrap{
+  padding: 40px 20px;
+}
 @media screen and (max-device-width: 980px) and (min-device-width: 320px) {
   .xepan-form-free-trial-btn{
     font-size:21px!important;
