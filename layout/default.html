@@ -7,7 +7,7 @@
     <meta name="author" content="">
     <meta name="google-site-verification" content="L2nqVkO_gRnU4PG2fQuq1cjT_MsoOELoCSlXEcqg4IA" />
     <title>{title}xEpan CMS{/}</title>
-	
+    
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/animate.min.css" rel="stylesheet">
@@ -50,19 +50,19 @@
                 </div>
             </div><!--/.container-->
         </div><!--/.top-bar-->
-
-        <nav class="navbar navbar-inverse" role="banner">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <div class = "col-md-12">
+        <nav class="navbar navbar-inverse">
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle " data-toggle="collapse" data-target="#xepan-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+                <a class="navbar-brand" href="index" style="padding:0!important;"><img src="images/logo3.png" alt="logo"></a>
+              <!-- <div class = "col-md-12">
                         <div class = "col-md-3">
-                            <a class="navbar-brand" href="index"><img src="images/logo.png" alt="logo"></a>
                         </div>
 
                         <div class = "col-md-9">
@@ -71,31 +71,32 @@
                           </div>
                         </div>
 
-                    </div>
-                </div>
-				
-                <div class="collapse navbar-collapse navbar-right">
-                    <ul class="nav navbar-nav">
-                        <li class="{$index_active}"><a href="index">Home</a></li>
-                        <li class="{$features_active}"><a href="features">Features</a></li>
-                        <li class="{$epantemplates_active}"><a href="epantemplates">Templates</a></li>
-                        <li class="{$pricing_active}"><a href="pricing">Pricing</a></li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Documentation <i class="fa fa-angle-down"></i></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="documents_websitebuilder">Website Builder</a></li>
-                                <li><a href="documents_templatebuilder">xEpan Template Builder</a></li>
-                                <li><a href="documents_erp">ERP</a></li>
-                                <li><a href="documents_developer">Developer</a></li>
-                            </ul>
-                        </li>
-                        <li class="{$blog_active}"><a href="blog">Blog</a></li> 
-                        <li class="{$myepans_active}"><a href="myepans">My Epans</a></li> 
-                    </ul>
-                </div>
-            </div><!--/.container-->
-        </nav><!--/nav-->
-		
+                </div> -->
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <!-- <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> -->
+            <div id="xepan-navbar-collapse-1" class="collapse navbar-collapse navbar-right">
+                <ul class="nav navbar-nav">
+                    <li class="{$index_active}"><a href="index">Home</a></li>
+                    <li class="{$features_active}"><a href="features">Features</a></li>
+                    <li class="{$epantemplates_active}"><a href="epantemplates">Templates</a></li>
+                    <li class="{$pricing_active}"><a href="pricing">Pricing</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Documentation <i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="documents_websitebuilder">Website Builder</a></li>
+                            <li><a href="documents_templatebuilder">xEpan Template Builder</a></li>
+                            <li><a href="documents_erp">ERP</a></li>
+                            <li><a href="documents_developer">Developer</a></li>
+                        </ul>
+                    </li>
+                    <li class="{$blog_active}"><a href="blog">Blog</a></li> 
+                    <li class="{$myepans_active}"><a href="myepans">My Epans</a></li> 
+                </ul>
+            </div>
+        </div><!--/.container-->
+    </nav><!--/nav-->
+        
     </header><!--/header-->
     <div class="xepan-component xepan-sortable-component xepan-page-wrapper">
     {$Content}
@@ -191,5 +192,10 @@
       ga('send', 'pageview');
 
     </script>
+    <style type="text/css">
+        .navbar-nav > li {
+            padding: 5px!important;
+        }
+    </style>
 </body>
 </html>
