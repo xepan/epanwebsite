@@ -2521,10 +2521,19 @@ shortcodes page css
   margin-left: 0px!important;
   margin-right: 0px!important;
 }
+.navbar-brand{
+  margin-left: 30%!important;
+}
+.navbar-nav{
+  margin-top: 0px!important;
+}
 @media screen and (max-device-width: 980px) and (min-device-width: 320px) {
   .xepan-form-free-trial-btn{
     font-size:21px!important;
     font-family: Lucida Console;
+  }
+  .navbar-brand{
+    margin-left: 0%!important;
   }
 }  
 
