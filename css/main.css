@@ -2539,6 +2539,18 @@ shortcodes page css
     margin-left: 0%!important;
   }
 }  
-
-
-
+.nav-tabs > li.active > a::after{
+  border-width: 32px 22px
+}
+.nav-tabs > li.active{
+  margin-right: 22px;
+}
+.nav-tabs > li > a{
+  padding:20px 40px;
+}
+.nav-tabs > li{
+  border-bottom: 0px solid #e6e6e6;
+}
+.nav-tabs {
+    border-right: 0px solid #e6e6e6;
+}
