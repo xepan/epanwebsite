@@ -2554,3 +2554,13 @@ shortcodes page css
 .nav-tabs {
     border-right: 0px solid #e6e6e6;
 }
+
+#bottom{
+  border-bottom: 3px solid #c52d2f !important;
+  padding: 28px 0 !important;
+}
+
+#footer {
+    padding-bottom: 15px !important; 
+    padding-top: 15px !important;
+}
