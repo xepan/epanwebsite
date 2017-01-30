@@ -20,6 +20,38 @@
     border: 1px solid #f2f2f2 !important;
 }
 
+input#bigbutton {
+margin-left:5%;
+margin-right:5%;
+width:90%;
+background: #ef473a; /*the colour of the button*/
+padding: 8px 14px 10px; /*apply some padding inside the button*/
+border:1px solid #ef473a; /*required or the default border for the browser will appear*/
+cursor:pointer; /*forces the cursor to change to a hand when the button is hovered*/
+/*style the text*/
+font-size:1.5em;
+font-family:Oswald, sans-serif; /*Oswald is available from http://www.google.com/webfonts/specimen/Oswald*/
+letter-spacing:.1em;
+text-shadow: 0 -1px 0px rgba(0, 0, 0, 0.3); /*give the text a shadow - doesn't appear in Opera 12.02 or earlier*/
+color: #fff;
+/*use box-shadow to give the button some depth - see cssdemos.tupence.co.uk/box-shadow.htm#demo7 for more info on this technique*/
+-webkit-box-shadow: inset 0px 1px 0px #ef473a, 0px 5px 0px 0px #ef473a, 0px 10px 5px #999;
+-moz-box-shadow: inset 0px 1px 0px #ef473a, 0px 5px 0px 0px #ef473a, 0px 10px 5px #999;
+box-shadow: inset 0px 1px 0px #ef473a, 0px 5px 0px 0px #ef473a, 0px 10px 5px #999;
+/*give the corners a small curve*/
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+border-radius: 10px;
+}
+/***SET THE BUTTON'S HOVER AND FOCUS STATES***/
+input#bigbutton:hover, input#bigbutton:focus {
+color:#dfe7ea;
+/*reduce the size of the shadow to give a pushed effect*/
+-webkit-box-shadow: inset 0px 1px 0px #ef473a, 0px 2px 0px 0px #ef473a, 0px 2px 5px #999;
+-moz-box-shadow: inset 0px 1px 0px #ef473a, 0px 2px 0px 0px #ef473a, 0px 2px 5px #999;
+box-shadow: inset 0px 1px 0px #ef473a, 0px 2px 0px 0px #ef473a, 0px 2px 5px #999;
+}
+
 </style>
 <div lead_category="3030" on_success="Same Page" show_as_popup="true" send_mail="true" ask_name="true" id="480939c6-6af8-4beb-b4ef-e7f460ea3af6" class="xepan-component xepan-serverside-component" xepan-component="xepan/marketing/Tool_Subscription"></div>
 <section style="display: block;" id="main-slider" class="no-margin carousel slide" data-interval="1000"><div class="carousel slide">
@@ -87,7 +119,17 @@
     <a class="next hidden-xs" href="#main-slider" data-slide="next">
         <i class="fa fa-chevron-right"></i>
     </a>
-</section><div style="max-height: 100%; max-width: 100%; width: auto; margin-bottom: 25px; background-color: rgb(245, 245, 245); margin-top: 25px;" id="75db9f21-5b83-45e1-c2b6-8aa9ef4c2425" xepan-component="xepan/cms/Tool_Container" emptytext="Container" class="xepan-component xepan-sortable-component container ui-sortable">
+</section>
+
+<div style="max-height: 100%; max-width: 100%; width: auto; margin-bottom: 25px; background-color: #ffffff; margin-top: 25px;" id="75db9f21-5b83-45e1-c2b6-8aa9ef4c2425" xepan-component="xepan/cms/Tool_Container" emptytext="Container" class="xepan-component xepan-sortable-component container ui-sortable">
+	<div class="row xepan-component" style="min-height:20px;" xepan-component="xepan/cms/Tool_Columns" id="5e8055e1-ab02-45d3-b779-b1c9fdef9a1b">
+		<a href="quote"><input id="bigbutton" type="submit" value="Visit Demo / Request A Quote" /></a>
+	</div>
+</div>
+
+
+
+<div style="display:none; max-height: 100%; max-width: 100%; width: auto; margin-bottom: 25px; background-color: rgb(245, 245, 245); margin-top: 25px;" id="75db9f21-5b83-45e1-c2b6-8aa9ef4c2425" xepan-component="xepan/cms/Tool_Container" emptytext="Container" class="xepan-component xepan-sortable-component container ui-sortable">
         <div class="row xepan-component" style="min-height:20px;" xepan-component="xepan/cms/Tool_Columns" id="5e8055e1-ab02-45d3-b779-b1c9fdef9a1b">
           <!-- <div class="col-md-3 col-sm-12 col-xs-12 col-lg-3 xepan-sortable-component ui-sortable" data-xs="12" data-sm="12" data-md="3" data-lg="3" data-toolcolumnclass="xepan-tool-column" emptytext="Column 6">
             <div class=" alert alert-warning xepan-padding-xlarge" style="margin-top: 30px">Video Here</div>

@@ -296,7 +296,8 @@ img:hover{
 
 .xepan-form-free-trial-btn{
     font-size : 30px !important;
- }    
+ } 
+input#bigbutton { margin-left:5%; margin-right:5%; width:90%; background: #ef473a; /*the colour of the button*/ padding: 8px 14px 10px; /*apply some padding inside the button*/ border:1px solid #ef473a; /*required or the default border for the browser will appear*/ cursor:pointer; /*forces the cursor to change to a hand when the button is hovered*/ /*style the text*/ font-size:1.5em; font-family:Oswald, sans-serif; /*Oswald is available from http://www.google.com/webfonts/specimen/Oswald*/ letter-spacing:.1em; text-shadow: 0 -1px 0px rgba(0, 0, 0, 0.3); /*give the text a shadow - doesn't appear in Opera 12.02 or earlier*/ color: #fff; /*use box-shadow to give the button some depth - see cssdemos.tupence.co.uk/box-shadow.htm#demo7 for more info on this technique*/ -webkit-box-shadow: inset 0px 1px 0px #ef473a, 0px 5px 0px 0px #ef473a, 0px 10px 5px #999; -moz-box-shadow: inset 0px 1px 0px #ef473a, 0px 5px 0px 0px #ef473a, 0px 10px 5px #999; box-shadow: inset 0px 1px 0px #ef473a, 0px 5px 0px 0px #ef473a, 0px 10px 5px #999; /*give the corners a small curve*/ -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; } /***SET THE BUTTON'S HOVER AND FOCUS STATES***/ input#bigbutton:hover, input#bigbutton:focus { color:#dfe7ea; /*reduce the size of the shadow to give a pushed effect*/ -webkit-box-shadow: inset 0px 1px 0px #ef473a, 0px 2px 0px 0px #ef473a, 0px 2px 5px #999; -moz-box-shadow: inset 0px 1px 0px #ef473a, 0px 2px 0px 0px #ef473a, 0px 2px 5px #999; box-shadow: inset 0px 1px 0px #ef473a, 0px 2px 0px 0px #ef473a, 0px 2px 5px #999; }
 
 </style>
 <!-- MODEL POPUPS --><!-- HR APPLICATITON START--><div id="hrmodal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
@@ -1144,7 +1145,12 @@ with any customer in just one click to have a communication history. Post based 
 
 
 </div>
-</div><div class="xepan-component xepan-serverside-component" xepan-component="xepan/epanservices/Tool_EpanTrial" id="0f80f277-7c9f-4dfc-8c27-17df18ae7cb8"></div>
+<div style="max-height: 100%; max-width: 100%; width: auto; margin-bottom: 25px; background-color: #ffffff; margin-top: 25px;" id="75db9f21-5b83-45e1-c2b6-8aa9ef4c2425" xepan-component="xepan/cms/Tool_Container" emptytext="Container" class="xepan-component xepan-sortable-component container ui-sortable">
+	<div class="row xepan-component" style="min-height:20px;" xepan-component="xepan/cms/Tool_Columns" id="5e8055e1-ab02-45d3-b779-b1c9fdef9a1b">
+		<a href="quote"><input id="bigbutton" type="submit" value="Visit Demo / Request A Quote" /></a>
+	</div>
+</div>
+</div><div style="display:none;" class="xepan-component xepan-serverside-component" xepan-component="xepan/epanservices/Tool_EpanTrial" id="0f80f277-7c9f-4dfc-8c27-17df18ae7cb8"></div>
 
 <script type="text/javascript" style="">
     
