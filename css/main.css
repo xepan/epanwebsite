@@ -2538,6 +2538,7 @@ shortcodes page css
   .navbar-brand{
     margin-left: 0%!important;
   }
+
 }  
 .nav-tabs > li.active > a::after{
   border-width: 32px 22px
@@ -2564,3 +2565,34 @@ shortcodes page css
     padding-bottom: 15px !important; 
     padding-top: 15px !important;
 }
+
+.printing-custom-from .atk-form-row-line input {
+    width: 100% !important;
+  min-width:100%;
+}
+.printing-custom-from .atk-form-row-number input {
+    width: 100%;
+   min-width:100%;
+}
+.printing-custom-from button {
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857;
+    padding: 6px 12px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+  	width:100%
+}
+.printing-custom-from button:hover, .printing-custom-from button:focus {
+    color: white;
+    text-decoration: none;
+}
+
+
