@@ -1,0 +1,63 @@
+<div class="contact-section">
+  <div class="contact-form">
+    <form  id="contact-form" method="post" action="sendmail.php" role="form">
+      <div class="row">
+			<div data-wow-duration="500ms" data-wow-delay=".6s" class="form-group col-md-6 wow fadeInDown">
+                <div class="atk-form-row atk-form-field">
+                  {$name}
+                </div>
+              </div>
+            <div data-wow-duration="500ms" data-wow-delay=".6s" class="form-group col-md-6 wow fadeInDown">
+                <div class="atk-form-row atk-form-field">
+                  {$email}
+                </div>
+              </div>
+	  </div>
+	  <div class="row" style="margin-left: auto;margin-right: auto;width: 20%;">
+		{$FormButtons}
+	  </div>
+					
+    </form>
+  </div>
+</div>
+<style>
+  .contact-section {
+  	//padding: 15px 0;
+  	width:100%;
+  	margin:auto;
+  }
+  .contact-section .contact-form {
+  	margin-top: 42px;
+  }
+  .contact-section input {
+  	display: block;
+  	height: 40px;
+  	padding: 6px 12px;
+  	font-size: 13px;
+  	line-height: 1.428571429;
+  	background-color: #fff;
+  	background-image: none;
+  	border: 1px solid #ccc;
+  	border-radius: 4px;
+  	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  	-webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  	-o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  	transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  	border-radius: 1px;
+  	border: 1px solid rgba(111, 121, 122, 0.3);
+  	box-shadow: none;
+  	-webkit-box-shadow: none;
+  }
+  
+  .contact-form .atk-form-row input{
+  	width: 90%;
+  	float:left;
+  }
+  .contact-form button{
+  	background-color: whitesmoke;
+  	border: medium none;
+  	width: 100%;
+  	padding: 13px;
+  }
+</style>
