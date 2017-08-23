@@ -1,8 +1,8 @@
 <div class="contact-section">
   <div class="contact-form">
     <form  id="contact-form" method="post" action="sendmail.php" role="form">
-      <div class="row">
-			<div data-wow-duration="500ms" data-wow-delay=".6s" class="form-group col-md-6 wow fadeInDown">
+      <div class="row " style="background-color: rgb(30, 144, 255); padding: 26px; position: relative; z-index: 100; box-shadow: 0px 3px 25px rgba(0, 0, 0, 0.1); margin-bottom: 10px;">
+            <div data-wow-duration="500ms" data-wow-delay=".6s" class="form-group col-md-6 wow fadeInDown">
                 <div class="atk-form-row atk-form-field">
                   {$name}
                 </div>
@@ -13,7 +13,7 @@
                 </div>
               </div>
 	  </div>
-	  <div class="row" style="margin-left: auto;margin-right: auto;width: 20%;">
+	  <div class="row" style="margin-left: auto;margin-right: auto;width: 40%;">
 		{$FormButtons}
 	  </div>
 					
@@ -27,7 +27,7 @@
   	margin:auto;
   }
   .contact-section .contact-form {
-  	margin-top: 42px;
+  //	margin-top: 42px;
   }
   .contact-section input {
   	display: block;
@@ -55,9 +55,11 @@
   	float:left;
   }
   .contact-form button{
-  	background-color: whitesmoke;
   	border: medium none;
   	width: 100%;
   	padding: 13px;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+    color: #fff;
   }
 </style>
