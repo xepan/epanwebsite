@@ -1,1 +1,9 @@
  /*Define Your Custom CSS*/
+ 
+ .bg-dark-60 .features-title {
+     color: #fff;
+ }
+ 
+ .btn.btn-border-w {
+    color: auto;
+ }
