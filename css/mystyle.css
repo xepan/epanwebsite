@@ -1,5 +1,10 @@
  /*Define Your Custom CSS*/
  
+div[xepan-component-name="Template Region"] {
+ 	margin-top:50px;
+ 	margin-bottom:60px;
+ }
+
  .bg-dark-60 .features-title {
      color: #fff;
  }
