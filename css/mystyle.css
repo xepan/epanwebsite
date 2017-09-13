@@ -1,12 +1,16 @@
  /*Define Your Custom CSS*/
  
 div[xepan-component-name="Template Region"] {
- 	margin-top:50px;
- 	margin-bottom:60px;
+     margin-top:50px;
+     margin-bottom:60px;
  }
-
- .bg-dark-60 .features-title {
+ 
+ .bg-dark-60 i.fa {
      color: #fff;
+ }
+ 
+ .bg-dark-60 h2,.bg-dark-60 h3,.bg-dark-60 .feature-title {
+     color:#fff;
  }
  
  .btn.btn-border-w {
@@ -16,3 +20,30 @@ div[xepan-component-name="Template Region"] {
  .xepan-page-wrapper {
      margin-top: 51px;
  }
+ 
+ .module, .module-small {
+     padding : 50px 0;
+ }
+ 
+ .module-large {
+     padding : 140px 0;
+ }
+.row.blog-post-content{
+    width:100%;
+    margin:auto;
+      padding:10px;
+      font-size:16px;
+  }
+
+.post-columns .xshop-item-paginator{
+  text-align:center;
+  font-size:16px;
+}
+
+.template-author-form input, .template-author-form textarea, .template-author-form select{
+    width:100%;
+}
+
+.post-columns .xshop-item-paginator a{
+    padding:4px;
+}
