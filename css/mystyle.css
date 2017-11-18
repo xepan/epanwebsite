@@ -47,3 +47,16 @@ div[xepan-component-name="Template Region"] {
 .post-columns .xshop-item-paginator a{
     padding:4px;
 }
+
+.xepan-theme-grid h3{
+    color:black;
+    text-transform:uppercase;
+}
+
+
+.btn-free-trial h1{
+    padding:0px;
+    margin-bottom:10px;
+    margin-top:0px;
+    font-size:20px; !important
+}
