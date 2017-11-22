@@ -53,7 +53,9 @@ div[xepan-component-name="Template Region"] {
     text-transform:uppercase;
 }
 
-
+.landing-image-text h2 {
+    margin-top:5px;
+}
 .btn-free-trial h1{
     padding:0px;
     margin-bottom:10px;
