@@ -66,3 +66,9 @@ div[xepan-component-name="Template Region"] {
 .gitter-chat-embed {
     z-index:1050;
 }
+
+.home-section.home-full-height.xepan-component .btn.btn-border-w.btn-round{
+  background-color:white;
+  border:1px solid #f3f3f3;
+  color:black;
+}
