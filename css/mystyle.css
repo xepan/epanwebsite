@@ -72,3 +72,80 @@ div[xepan-component-name="Template Region"] {
   border:1px solid #f3f3f3;
   color:black;
 }
+
+.property-parallax {
+ position:relative;
+ height:600px;
+}
+
+.printing-custom-form #front_new-printing_xepan_cms_tool_customform_form {
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding:15px;
+}
+
+#front_new-printing_xepan_cms_tool_customform input{
+    width:100%;
+}
+
+.erp-video-section iframe{
+   width:1000px;
+    height:450px;
+}
+
+.pricing-table table {
+  overflow: hidden;
+  display:inline-block;
+}
+
+.pricing-table tr > td:nth-of-type(4){
+  background-color:#669999;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding:25px;
+
+}
+
+.pricing-table tbody:nth-of-type(odd) {
+  background-color:#e0ebeb;
+}
+  
+.pricing-table tr > td{
+  padding:15px;
+  border:1px;
+   position: relative;
+ }
+
+.pricing-table .table-heading > td {
+  padding:40px;
+ }
+    
+
+.pricing-table td:hover td{ 
+border:2px solid red;
+
+}
+
+.pricing-main-heading p{
+  padding:40px;
+  background-color:#006699;
+  color:#fff;
+  font-size:36px;
+  font-weight:italic;
+  margin:0 !important;
+}
+
+.pricing-subheading{
+  padding:10px;
+}
+
+.xprint-pricing-table tr td {
+  padding:15px;
+}
+
+.xprint-pricing-table tr:nth-of-type(odd) {
+  background-color:#e0ebeb;
+}
+
+.pricing-column {
+  padding:0 !important;
+  background-color:#eee;
+}
