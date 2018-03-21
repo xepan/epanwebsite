@@ -271,3 +271,30 @@ border:2px solid red;
 .post-thumbnail img {
 	width:800px;
 }
+.printing-custom-form form.atk4_form input{
+ width: 90% !important;
+  margin-left:20px !important;
+  margin-right:20px !important;
+ 
+  
+}
+.printing-custom-form form.atk4_form textarea{
+ width: 90% !important;
+  margin-left:20px !important;
+  margin-right:20px !important;
+ 
+  
+}
+.printing-custom-form form.atk4_form label{
+ margin-left:15px !important;
+ 
+  
+}
+.printing-custom-form form.atk4_form  button{
+ margin-top:10px !important;
+   margin-bottom:10px !important;
+   margin-left:300px !important;
+ 
+  
+}
+
