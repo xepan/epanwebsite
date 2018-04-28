@@ -238,7 +238,7 @@ border:2px solid red;
 }
 
 .hover-effect {
-  	background-color:#85adad;
+      background-color:#85adad;
   	box-shadow: 0px 0px 40px #000000;
     z-index: 2;
     -webkit-transition: all 200ms ease-in;
@@ -302,6 +302,113 @@ border:2px solid red;
  
   
 }
+
+.portfolio {
+  background-color:#fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  display: block;
+  line-height: 1.42857;
+  margin-bottom: 20px;
+  padding: 4px;
+  transition: border 0.2s ease-in-out 0s;
+}
+
+.portfolio .img-container {
+  height:300px !important;
+  overflow-y:scroll !important;
+  width:100% !important;
+}
+  
   
   
 
+
+.contact .atk-actions{
+	float:right;
+  	width:80px;
+  	margin-top: 30px;
+    margin-right: 100px;
+}
+
+.contact .atk-actions button{
+	color:white;
+  	background-color:black;
+  	height:43px;
+  	width:200px;
+  	margin-top:-8px;
+  	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+  	border-radius:5px;
+}
+
+.contact .atk-actions button:hover{
+	color:black;
+  	background-color:white;
+  	border:1px solid black;
+    border-radius:3px;
+}
+
+.contact .atk-form-label label span{
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+}
+
+.contact .atk-form-row{
+	width:300px!important;
+  	float:left;
+	margin-right:20px;
+}
+.contact .atk-form-field input,textarea{
+  	height:40px;
+  	width:300px!important;
+  	border:1px solid black;
+  	border-radius:3px;
+}
+
+
+.contact-section{
+	margin-bottom:200px!important;	
+}
+
+@media only screen and (max-width:600px) {
+	.contact .atk-form-row{
+	width:296px!important;
+  	float:left;
+	margin-right:10px;
+	}
+  .contact .atk-form-field input,textarea{
+  	height:40px;
+  	width:296px!important;
+  	border:1px solid black;
+  	border-radius:3px;
+	}
+  .contact-section{
+  	margin-bottom:300px!important;
+  }
+  .contact .atk-actions{
+	
+    margin-right: 158px;
+	}
+}
+.subscribe {
+     padding-top:15px;
+     padding-bottom:30px;
+ }
+
+.business-problem-form input, .business-problem-form textarea, .business-problem-form select{
+  width:100%;
+}
+
+.business-solution-heading{
+  padding-top:30px;
+  padding-bottom:10px;
+}
+
+.portfolio {
+  height: 400px !important;
+}
+
+.portfolio .img-container {
+  margin-bottom:20px !important;
+}
