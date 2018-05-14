@@ -1,4 +1,9 @@
  /*Define Your Custom CSS*/
+
+.event-blog img{
+height: 142px!important;
+    width: 186px !important;
+}
  
 div[xepan-component-name="Template Region"] {
      margin-top:50px;
