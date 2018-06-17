@@ -1,0 +1,318 @@
+<script style="">
+$(document).ready(function() {
+
+  //window and animation items
+  var animation_elements = $.find('.animation-element');
+  var web_window = $(window);
+
+  //check to see if any animation containers are currently in view
+  function check_if_in_view() {
+    //get current window information
+    var window_height = web_window.height();
+    var window_top_position = web_window.scrollTop();
+    var window_bottom_position = (window_top_position + window_height);
+
+    //iterate through elements to see if its in view
+    $.each(animation_elements, function() {
+
+      //get the element sinformation
+      var element = $(this);
+      var element_height = $(element).outerHeight();
+      var element_top_position = $(element).offset().top;
+      var element_bottom_position = (element_top_position + element_height);
+
+      //check to see if this current container is visible (its viewable if it exists between the viewable space of the viewport)
+      if ((element_bottom_position >= window_top_position) && (element_top_position <= window_bottom_position)) {
+        element.addClass('in-view');
+      } else {
+        element.removeClass('in-view');
+      }
+    });
+
+  }
+
+  //on or scroll, detect elements in view
+  $(window).on('scroll resize', function() {
+      check_if_in_view()
+    })
+    //trigger our scroll event on initial load
+  $(window).trigger('scroll');
+
+});
+
+$(document).ready(function() {
+
+  //window and animation items
+  var animation_elements = $.find('.animation-element1');
+  var web_window = $(window);
+
+  //check to see if any animation containers are currently in view
+  function check_if_in_view() {
+    //get current window information
+    var window_height = web_window.height();
+    var window_top_position = web_window.scrollTop();
+    var window_bottom_position = (window_top_position + window_height);
+
+    //iterate through elements to see if its in view
+    $.each(animation_elements, function() {
+
+      //get the element sinformation
+      var element = $(this);
+      var element_height = $(element).outerHeight();
+      var element_top_position = $(element).offset().top;
+      var element_bottom_position = (element_top_position + element_height);
+
+      //check to see if this current container is visible (its viewable if it exists between the viewable space of the viewport)
+      if ((element_bottom_position >= window_top_position) && (element_top_position <= window_bottom_position)) {
+        element.addClass('in-view');
+      } else {
+        element.removeClass('in-view');
+      }
+    });
+
+  }
+
+  //on or scroll, detect elements in view
+  $(window).on('scroll resize', function() {
+      check_if_in_view()
+    })
+    //trigger our scroll event on initial load
+  $(window).trigger('scroll');
+
+});
+</script><section id="xepan-366f5592-56ab-4b5a-bcb1-a266e7f5ff31" xepan-component="xepan/cms/Tool_Section" emptytext="Section" style="margin: 0px auto;" xepan-component-name="Section" class="xepan-component xepan-sortable-component xepan-cms-container ui-sortable" text-color="" scrollamount=""><div class="xepan-component xepan-serverside-component" xepan-component-name="SlideShow" xepan-component="xepan/cms/Tool_SlideShow" id="xepan-29f10b9b-713b-4cd5-e270-80a72cc0c500" text-color="" carousel_category="index-slider" show_thumbnail="false" scrollamount="" style="margin-top: -1px;"></div></section><section id="xepan-366f5592-56ab-4b5a-bcb1-a266e7f5ff31" xepan-component="xepan/cms/Tool_Section" emptytext="Section" style="margin: auto auto 0px; padding-top: 0%;" xepan-component-name="Section" class="xepan-component xepan-sortable-component xepan-cms-container ui-sortable" text-color="" scrollamount=""><div id="xepan-35c35c72-5802-46e9-97ab-adb5a96b72db" xepan-component="xepan/cms/Tool_Container" emptytext="Container" style="width: 95%; margin: 0px auto; padding-top: 3%;" xepan-component-name="Container" class="xepan-component xepan-sortable-component xepan-cms-container ui-sortable" text-color="" scrollamount=""><strong><strong><strong>
+
+
+
+<div xepan-component="xepan/cms/Tool_Columns" style="min-height: 15px; padding-bottom: 2%; padding-top: 1%;" xepan-component-name="Row/Columns" class="row xepan-component event-blog" id="xepan-809053f5-4cae-41ea-bd0e-044d9d6760a9" text-color="" data-extra-classes="event-blog" scrollamount="">
+  <div xepan-component="xepan/cms/Tool_Column" emptytext="Column 4" data-toolcolumnclass="xepan-tool-column" data-lg="2" data-md="2" data-sm="12" data-xs="12" xepan-component-name="Column" class="xepan-cms-column col-sm-12 col-xs-12  xepan-sortable-component xepan-component ui-sortable col-lg-2 col-md-2 animation-element slide-left testimonial" id="xepan-f2426000-aab4-446e-ee6a-2b650405a32e" text-color="" style="padding-top: 2%; background-color: rgb(34, 34, 34); border-top-right-radius: 80px; border-bottom-right-radius: 80px; margin-top: auto; margin-left: -20px;" scrollamount=""><div id="xepan-d1234742-4f25-40c5-ac41-4dde90571e9a" xepan-component-name="Text" xepan-component="xepan/cms/Tool_Text" emptytext="Edit this text" class="xepan-component xepan-editable-text mce-content-body event-heading" style="position: relative; padding-top: 0%; background-color: rgb(34, 34, 34);" text-color="" scrollamount="" data-extra-classes="event-heading" contenteditable="false"><p style="text-align: center;" data-mce-style="text-align: center;"><em><strong><span style="color: rgb(255, 255, 255); font-size: 18px;" data-mce-style="color: #ffffff; font-size: 18px;">MEET </span></strong></em></p><p style="text-align: center;" data-mce-style="text-align: center;"><span style="color: rgb(0, 0, 0); font-size: 18px;" data-mce-style="color: #000000; font-size: 18px;"><em><strong><span style="color: rgb(255, 255, 255);" data-mce-style="color: #ffffff;">US</span> </strong></em><br></span></p></div></div>
+  <div xepan-component="xepan/cms/Tool_Column" emptytext="Column 4" data-toolcolumnclass="xepan-tool-column" data-lg="2" data-md="2" data-sm="12" data-xs="12" xepan-component-name="Column" class="xepan-cms-column xepan-sortable-component xepan-component ui-sortable col-lg-2 col-md-2 col-sm-12 col-xs-12" id="xepan-bfddf238-6cf9-429f-f6e3-90ae2302d141" text-color="" scrollamount="">
+<span id="xepan-b8533d36-cbce-46bd-f39c-d41a4fbd1d40" xepan-component="xepan/cms/Tool_Image" xepan-component-name="Image" class="xepan-component" style="display: table; width: 100%; height: 130px; overflow: hidden;" text-color=""><img src="images/EVENTS/america.jpg" style="max-width:100%; height: 100%; width:100%; height: inherit" data-extra-classes="" alt="Image" class="ui-resizable"></span><div id="xepan-8a14b891-24fd-442f-dc5f-12c713de23b6" xepan-component-name="Text" xepan-component="xepan/cms/Tool_Text" emptytext="Edit this text" class="xepan-component xepan-editable-text mce-content-body" style="position: relative;" text-color="" contenteditable="false"><p style="text-align: center;" data-mce-style="text-align: center;"><span style="color: rgb(0, 0, 0);" data-mce-style="color: #000000;">NEW YORK<br>28 May 2018</span></p></div>
+</div>
+<div xepan-component="xepan/cms/Tool_Column" emptytext="Column 4" data-toolcolumnclass="xepan-tool-column" data-lg="2" data-md="2" data-sm="12" data-xs="12" xepan-component-name="Column" class="xepan-cms-column xepan-sortable-component xepan-component ui-sortable col-lg-2 col-md-2 col-sm-12 col-xs-12" text-color="" id="xepan-a5993d1f-09d3-4458-dd2f-6a51df692cdc">
+<span xepan-component="xepan/cms/Tool_Image" xepan-component-name="Image" class="xepan-component" style="display: table; height: 130px; overflow: hidden;" text-color="" id="xepan-5c1afff0-c1e2-4fb1-db21-efad06638c0b"><img src="images/EVENTS/Sydney.jpg" style="max-width:100%; height: 100%; width:100%; height: inherit" data-extra-classes="" alt="Image" class="ui-resizable"></span><div id="xepan-26a9c86e-0e5c-4f89-c809-8b79215b0374" xepan-component-name="Text" xepan-component="xepan/cms/Tool_Text" emptytext="Edit this text" class="xepan-component xepan-editable-text mce-content-body" style="position: relative;" text-color="" contenteditable="false"><p style="text-align: center;" data-mce-style="text-align: center;"><span style="color: rgb(0, 0, 0);" data-mce-style="color: #000000;">SYDNEY<br>1 June 2018</span></p></div>
+</div>
+<div xepan-component="xepan/cms/Tool_Column" emptytext="Column 4" data-toolcolumnclass="xepan-tool-column" data-lg="2" data-md="2" data-sm="12" data-xs="12" xepan-component-name="Column" class="xepan-cms-column xepan-sortable-component xepan-component ui-sortable col-lg-2 col-md-2 col-sm-12 col-xs-12" text-color="" id="xepan-621fc9f0-40c5-4369-c8ff-9312a28a2fdf">
+<span xepan-component="xepan/cms/Tool_Image" xepan-component-name="Image" class="xepan-component" style="display: table; height: 130px; overflow: hidden;" text-color="" id="xepan-0cc0298a-7f25-4718-8907-5e36d2a8ef40"><img src="images/EVENTS/TowerBridge-lundon.jpg" style="max-width:100%; height: 100%; width:100%; height: inherit" data-extra-classes="" alt="Image" class="ui-resizable"></span><div id="xepan-b2c736fe-5f45-4229-9a99-0f9ca79cd181" xepan-component-name="Text" xepan-component="xepan/cms/Tool_Text" emptytext="Edit this text" class="xepan-component xepan-editable-text mce-content-body" style="position: relative;" text-color="" contenteditable="false"><p style="text-align: center;" data-mce-style="text-align: center;"><span style="color: rgb(0, 0, 0);" data-mce-style="color: #000000;">LONDON<br>13 June 2018</span></p></div>
+</div>
+<div xepan-component="xepan/cms/Tool_Column" emptytext="Column 4" data-toolcolumnclass="xepan-tool-column" data-lg="2" data-md="2" data-sm="12" data-xs="12" xepan-component-name="Column" class="xepan-cms-column xepan-sortable-component xepan-component ui-sortable col-lg-2 col-md-2 col-sm-12 col-xs-12" text-color="" id="xepan-18fb89de-faa9-45ae-d879-5039efae1182">
+<span xepan-component="xepan/cms/Tool_Image" xepan-component-name="Image" class="xepan-component" style="display: table; height: 130px; overflow: hidden;" text-color="" id="xepan-afc8bcd4-d8e0-475c-9a5d-a0f6ad04d220"><img src="images/EVENTS/japan.jpg" style="max-width:100%; height: 100%; width:100%; height: inherit" data-extra-classes="" alt="Image" class="ui-resizable"></span><div id="xepan-f79e84f8-f444-4647-d211-a1c8a7872da1" xepan-component-name="Text" xepan-component="xepan/cms/Tool_Text" emptytext="Edit this text" class="xepan-component xepan-editable-text mce-content-body" style="position: relative;" text-color="" contenteditable="false"><p style="text-align: center;" data-mce-style="text-align: center;"><span style="color: rgb(0, 0, 0);" data-mce-style="color: #000000;">TOKYO<br>16 June 2018</span></p></div>
+</div>
+<div xepan-component="xepan/cms/Tool_Column" emptytext="Column 4" data-toolcolumnclass="xepan-tool-column" data-lg="2" data-md="2" data-sm="12" data-xs="12" xepan-component-name="Column" class="xepan-cms-column xepan-sortable-component xepan-component ui-sortable col-lg-2 col-md-2 col-sm-12 col-xs-12" text-color="" id="xepan-d929ea18-f6c2-449b-bc02-93a3e5884678" scrollamount="">
+<span xepan-component="xepan/cms/Tool_Image" xepan-component-name="Image" class="xepan-component" style="display: table; height: 130px; overflow: hidden;" text-color="" id="xepan-b1da9b22-ad0d-40eb-ad14-e3997ea2c403"><img src="images/EVENTS/maxresdefault.jpg" style="max-width:100%; height: 100%; width:100%; height: inherit" data-extra-classes="" alt="Image" class="ui-resizable"></span><div id="xepan-0133353c-83fd-4df8-d268-301484a8ae6f" xepan-component-name="Text" xepan-component="xepan/cms/Tool_Text" emptytext="Edit this text" class="xepan-component xepan-editable-text mce-content-body" style="position: relative;" contenteditable="false"><div class="fl ellip oBrLN" data-original-name="Abu Dhabi" style="text-align: center;" data-mce-style="text-align: center;">ABU DHABI<br>22 June 2018&nbsp;<br></div></div>
+</div>
+
+
+
+
+
+
+  
+
+</div>
+</strong></strong></strong></div></section><section class="xepan-component xepan-sortable-component ui-sortable" xepan-component-name="white section" id="b67b5d3b-de17-4590-fe8a-a27eba4f4bdd" text-color="" style="margin-top: 5px; background-image: none;"><div class="container"></div>
+<section class="module-small free-trial xepan-component" xepan-component-name="title banner" id="xepan-3db1228d-b117-4de6-f121-307044b8a3f3" scrollamount="" text-color="" style="background-color: rgb(78, 78, 78);"><div class="container text-center">
+          <div class="row">
+            <div class="col-sm-8 col-sm-offset-2 xepan-sortable-component ui-sortable" xepan-component-name="inner section">
+              <h2 class="font-alt xepan-editable-text xepan-component mce-content-body" xepan-component-name="heading" id="bff939e2-138f-4f9b-9478-410e3a1ace96" style="position: relative;" text-color="" scrollamount="" contenteditable="false"><span style="color: rgb(255, 255, 255);" data-mce-style="color: #ffffff;">Start your</span> &nbsp;<span class="color-golden" style="color: rgb(64, 128, 6);" data-mce-style="color: #408006;">free 14 days trial</span> <span style="color: rgb(255, 255, 255);" data-mce-style="color: #ffffff;">now</span></h2>
+              <p class="color-light font-15 xepan-editable-text xepan-component mce-content-body" xepan-component-name="detail" id="0683745c-3973-4a51-8622-ebdae4889c02" style="position: relative;" text-color="" contenteditable="false"><span style="color: rgb(255, 255, 255);" data-mce-style="color: #ffffff;">A fully functional product for complete 14 days to play, with complete support in setting up your business on Epan ERP/CRM</span></p>
+            </div>
+          </div>
+          <div class="xepan-component xepan-sortable-component ui-sortable" xepan-component-name="button" id="c89fd691-6b94-4d67-ef9f-bc9d46b9118a" text-color=""><a href="login" target="" id="e457f417-3d10-41bd-e7c6-def5bdb40863" style="background-color: rgb(64, 128, 6); border-color: rgb(64, 128, 6);" data-button-icon-class="" data-icon-position="left" xepan-button-label="REGISTER NOW" xepan-button-link="login" xepan-button-link-behavior="0" xepan-component="xepan/cms/Tool_Button" xepan-component-name="Button" class="xepan-button xepan-component custom-btn-links btn  btn-circle btn-danger" data-extra-classes="btn-circle" text-color="" scrollamount=""><i class="fa "></i> REGISTER NOW</a></div>
+        </div>
+      </section><div id="4e612020-96a6-4e55-bf3a-a0ed58e2c772" xepan-component="xepan/cms/Tool_Container" emptytext="Container" style="width: 85%; margin: 0px auto;" xepan-component-name="Container" class="xepan-component xepan-sortable-component xepan-cms-container ui-sortable" text-color="">
+<div class="row xepan-component" xepan-component-name="Section Heading" id="xepan-4dd3207e-dd9d-4f35-dfc9-879a5175c254" text-color="" style="margin-top: 20px; padding-top: 0%;">
+              <div class="col-sm-6 col-sm-offset-3 xepan-component xepan-sortable-component ui-sortable" id="eb0ca05d-52b7-4bb5-fae6-56aa0dbacde7" text-color="" style="padding-top: 3%;">
+                <h2 class="module-title font-alt xepan-component xepan-editable-text xepan-no-richtext" xepan-component-name="Title" id="a2dd9685-af8b-4b10-b25e-3deef7da6722" text-color="" style="margin-bottom: -1px;" contenteditable="false">EPAN ERP/CRM FEATURES</h2>
+                <div class="module-subtitle font-serif xepan-component xepan-editable-text mce-content-body" id="bd81a242-ce31-4751-d9d0-1c2c287313cb" style="position: relative; margin-top: 10px; margin-bottom: 0px;" text-color="" scrollamount="" contenteditable="false"><p>Epan covers every aspect of your business, lets have a look at a few</p></div>
+              </div>
+            </div>
+<div class="row landing-image-text xepan-component" xepan-component-name="left image text" id="1d2a1cee-42ab-431a-b4fd-2080871af5f9" scrollamount="" text-color="" style="/* padding-bottom: 1%; */margin-top: 4px;border: 0px none rgb(153, 222, 175);background-image: none;" data-extra-classes="">
+<div class="col-sm-6 xepan-component xepan-sortable-component ui-sortable left-column animation-element slide-left" xepan-component-name="left column" id="7d04aece-a0e8-4763-f15c-b554fed7e693" text-color="" style="border-width: 1px; border-style: groove; border-color: rgb(238, 238, 238); width: 48%; margin-right: 13px; margin-top: 0px; margin-bottom: 0px;" data-extra-classes="left-column" scrollamount="">
+
+
+<div id="xepan-9f745cd7-1141-4c67-bfd5-ba901e1c9272" xepan-component="xepan/cms/Tool_Container" emptytext="Container" style="width: 85%; margin: 0px auto; height: auto;" xepan-component-name="Container" class="xepan-component xepan-sortable-component xepan-cms-container ui-sortable features-container" text-color="" data-extra-classes="features-container" scrollamount="">
+<h2 class="font-alt xepan-component xepan-editable-text mce-content-body modules-heading" xepan-component-name="heading" id="0232ab87-11d9-4f0d-fbdc-3c99d1ba8d65" style="position: relative; display: block;" text-color="" data-extra-classes="modules-heading" contenteditable="false">HR<br></h2>
+<span id="xepan-84f3d09e-cb85-4a34-b06b-c6bb82f4ce63" xepan-component="xepan/cms/Tool_Image" xepan-component-name="Image" class="xepan-component modules-icon" style="display: table;" text-color="" data-extra-classes="modules-icon" scrollamount=""><img src="images/modules/HR-28-512.png" style="max-width:100%; height: 100%; width:100%; height: inherit" data-extra-classes="" alt="Image" class="ui-resizable"></span><p class="xepan-component xepan-editable-text mce-content-body hr-text" xepan-component-name="text" id="9d8e2a7e-5602-4071-bda2-5e6290bc5ad3" style="position: relative; display: block;" text-color="" data-extra-classes="hr-text" scrollamount="" contenteditable="false">Implement the best practices to your HR department and manage every aspect of your HR&nbsp;<br><br></p>
+<ul class="xepan-component" id="xepan-d3518ebe-5b45-4a77-e56e-7fb46e010a57" text-color="" style="display: block;" scrollamount="">
+<li>Department -&gt; Post -&gt; Employee</li>
+<li>Salary, Leaves, Reimbursement</li>
+<li>Strong Department based&nbsp;&amp; Post-to-Document based&nbsp;ACL</li>
+<li>Post to email permissions</li>
+</ul>
+</div>
+
+<div id="xepan-56f1ce9f-f80e-4890-a0bb-8824c021e2a2" xepan-component="xepan/cms/Tool_Container" emptytext="Container" style="width: 100%; margin: 30px auto 0px; background-color: rgb(255, 255, 255);" xepan-component-name="Container" class="xepan-component xepan-sortable-component xepan-cms-container ui-sortable arrow_box" text-color="" scrollamount="" data-extra-classes="arrow_box"><span id="xepan-47f04511-82f0-4c3e-cf2e-950b3e086793" xepan-component="xepan/cms/Tool_Image" xepan-component-name="Image" class="xepan-component" style="display: table; width: 80%; margin-left: 59px; margin-top: 20px; height: 300px; overflow: hidden;" text-color="" data-extra-classes="" scrollamount=""><img src="websites/www/assets/menuhr.png" style="max-width:100%; height: 100%; width:100%; height: inherit" data-extra-classes="thumbnail" alt="Image" class="ui-resizable thumbnail"></span></div>
+
+</div>
+<div class="col-sm-6 xepan-component xepan-sortable-component ui-sortable left-column animation-element1 slide-left" xepan-component-name="left column" text-color="" style="border-width: 1px; border-style: groove; border-color: rgb(238, 238, 238); width: 48%; margin-right: 13px; margin-left: 21px; margin-bottom: 20px;" data-extra-classes="left-column" scrollamount="" id="xepan-115cde37-7a8a-4d48-8ee4-b294daba937e">
+
+
+<div xepan-component="xepan/cms/Tool_Container" emptytext="Container" style="width: 100%; margin: 30px auto 0px; background-color: rgb(255, 255, 255);" xepan-component-name="Container" class="xepan-component xepan-sortable-component xepan-cms-container ui-sortable arrow_box1" text-color="" scrollamount="" data-extra-classes="arrow_box1" id="xepan-02192062-8133-4db7-baf9-7294e62ce8ec"><span xepan-component="xepan/cms/Tool_Image" xepan-component-name="Image" class="xepan-component" style="display: table; width: 80%; margin-left: 59px; margin-top: 20px; height: 300px; overflow: hidden;" text-color="" data-extra-classes="" scrollamount="" id="xepan-f689d569-2e68-4822-de7e-a9c705db9959"><img src="websites/www/assets/menuhr.png" style="max-width:100%; height: 100%; width:100%; height: inherit" data-extra-classes="thumbnail" alt="Image" class="ui-resizable thumbnail"></span></div>
+<div xepan-component="xepan/cms/Tool_Container" emptytext="Container" style="width: 85%; margin: 28px auto 0px; height: auto;" xepan-component-name="Container" class="xepan-component xepan-sortable-component xepan-cms-container ui-sortable features-container" text-color="" id="xepan-26df229b-7286-47b6-a0ad-dcc66da03b16" data-extra-classes="features-container" scrollamount="">
+<h2 class="font-alt xepan-component xepan-editable-text mce-content-body modules-heading" xepan-component-name="heading" style="position: relative; display: block;" text-color="" data-extra-classes="modules-heading" id="xepan-7f774198-b1a8-418a-a74e-7cf5abf7c37e" contenteditable="false">UNIQUE MANAGEMENT&nbsp;WAY<br></h2>
+<span xepan-component="xepan/cms/Tool_Image" xepan-component-name="Image" class="xepan-component modules-icon" style="display: table;" text-color="" data-extra-classes="modules-icon" scrollamount="" id="xepan-de7fa9a3-c5a6-4c97-bff3-9325676d4ca7"><img src="images/modules/th1.jpg" style="max-width:100%; height: 100%; width:100%; height: inherit" data-extra-classes="" alt="Image" class="ui-resizable"></span><p class="xepan-component xepan-editable-text mce-content-body hr-text" xepan-component-name="text" style="position: relative; display: block;" text-color="" data-extra-classes="hr-text" scrollamount="" id="xepan-db2b26ef-9018-4ed1-e05b-14b1841695ef" contenteditable="false">of the major reason Epan is growing on top of others is its unique ability to manage and take output of not so dedicated staffs. If you are also struggling in managing your staff, we are here to rescue you.<br>&nbsp;<br><br></p>
+<ul class="xepan-component" id="xepan-5f72911c-4e5f-4af8-d6b3-f7d658efa9e2" text-color="" style="display: block; margin-top: 54px;" scrollamount="">
+<li>Don't talk, No verbal communications, Give task and let the system track.</li>
+<li>Define Regular works and let system&nbsp;point them if they are sitting ideal, Employee has to define what he is doing right now.</li>
+<li>When finished system will ask what they did exactly in this duration</li>
+<li>And even if defined may ask quantities that has been carried out and will give score based on your defined rules.</li>
+<li>Unique researched way to manage and self motivate people to give their best performance.</li>
+<li>To implement point system in perfect, we strongly recommend to call us to set the system.</li>
+</ul>
+</div>
+
+
+
+</div>
+<div class="col-sm-6 xepan-component xepan-sortable-component ui-sortable left-column animation-element slide-left" xepan-component-name="left column" text-color="" style="border-width: 1px; border-style: groove; border-color: rgb(238, 238, 238); width: 48%; margin-right: 13px;" data-extra-classes="left-column" scrollamount="" id="xepan-2103a79e-a2bb-4f56-8ca6-1ac46b4484d7">
+
+
+<div xepan-component="xepan/cms/Tool_Container" emptytext="Container" style="width: 85%; margin: 0px auto; height: auto;" xepan-component-name="Container" class="xepan-component xepan-sortable-component xepan-cms-container ui-sortable features-container" text-color="" data-extra-classes="features-container" scrollamount="" id="xepan-e4301f2e-ec02-4860-e24b-ebad0308429b">
+<h2 class="font-alt xepan-component xepan-editable-text mce-content-body modules-heading" xepan-component-name="heading" style="position: relative; display: block;" text-color="" data-extra-classes="modules-heading" id="xepan-1b15a763-8dfe-418e-cda6-33d405393109" contenteditable="false">COMMERCE</h2>
+<span xepan-component="xepan/cms/Tool_Image" xepan-component-name="Image" class="xepan-component modules-icon" style="display: table;" text-color="" data-extra-classes="modules-icon" scrollamount="" id="xepan-70b7a7c4-ea5c-41db-fe36-9b97c57ba6d1"><img src="images/modules/images.png" style="max-width:100%; height: 100%; width:100%; height: inherit" data-extra-classes="" alt="Image" class="ui-resizable"></span>
+<p class="xepan-editable-text xepan-component mce-content-body" id="xepan-9a8a71eb-142d-4acc-a66e-3d9987243640" text-color="" style="margin-top: 10px; position: relative;" scrollamount="" contenteditable="false">Need simple or complex commerce setup, Epan is always ready to do what you wants<br></p>
+<ul class="xepan-component" id="xepan-51f34734-587d-4572-e9d3-ece89d8bcf22" text-color="" style="display: block;">
+<li>Manages Online (E-Commerce) as well as Offline (Traditional) Commerce in one system.</li>
+<li>A Complete Quote to Cash system. (Even before and after)</li>
+<li>Manages sophisticated items with complex Specifications, custom fields (User chooses) and Rate charts.</li>
+<li>GST/VAT customisable TAX &amp; Shipping system.</li>
+<li>Complete Inventory with dispatch management.</li>
+<li>Tightly integrated with Accounts</li>
+</ul>
+</div>
+
+<div xepan-component="xepan/cms/Tool_Container" emptytext="Container" style="width: 100%; margin: 30px auto 0px; background-color: rgb(255, 255, 255);" xepan-component-name="Container" class="xepan-component xepan-sortable-component xepan-cms-container ui-sortable arrow_box" text-color="" scrollamount="" data-extra-classes="arrow_box" id="xepan-d56257e2-42e5-4052-e361-83236731fade"><span xepan-component="xepan/cms/Tool_Image" xepan-component-name="Image" class="xepan-component" style="display: table; width: 80%; margin-left: 59px; margin-top: 20px; height: 300px; overflow: hidden;" text-color="" data-extra-classes="" scrollamount="" id="xepan-af9a7190-ae5d-48f1-ed06-f68de70d8a4e"><img src="assets/menucommerce.png" style="max-width:100%; height: 100%; width:100%; height: inherit" data-extra-classes="thumbnail" alt="Image" class="ui-resizable thumbnail"></span></div>
+
+</div>
+<div class="col-sm-6 xepan-component xepan-sortable-component ui-sortable left-column animation-element1 slide-left" xepan-component-name="left column" text-color="" style="border-width: 1px; border-style: groove; border-color: rgb(238, 238, 238); width: 48%; margin-right: 13px; margin-left: 21px; margin-bottom: 20px;" data-extra-classes="left-column" scrollamount="" id="xepan-f8e8c611-cd78-4a10-e598-6b420920c351">
+
+
+<div xepan-component="xepan/cms/Tool_Container" emptytext="Container" style="width: 100%; margin: 30px auto 0px; background-color: rgb(255, 255, 255);" xepan-component-name="Container" class="xepan-component xepan-sortable-component xepan-cms-container ui-sortable arrow_box1" text-color="" scrollamount="" data-extra-classes="arrow_box1" id="xepan-6d3f3d3a-eca3-48c2-cdb8-77e69120d615"><span xepan-component="xepan/cms/Tool_Image" xepan-component-name="Image" class="xepan-component" style="display: table; width: 80%; margin-left: 59px; margin-top: 20px; height: 300px; overflow: hidden;" text-color="" data-extra-classes="" scrollamount="" id="xepan-3cd1d26b-86a1-4816-cde6-4ffbd416bf4e"><img src="assets/menuaccounts.png" style="max-width:100%; height: 100%; width:100%; height: inherit" data-extra-classes="thumbnail" alt="Image" class="ui-resizable thumbnail"></span></div>
+<div xepan-component="xepan/cms/Tool_Container" emptytext="Container" style="width: 85%; margin: 28px auto 0px; height: auto;" xepan-component-name="Container" class="xepan-component xepan-sortable-component xepan-cms-container ui-sortable features-container" text-color="" data-extra-classes="features-container" scrollamount="" id="xepan-917cd856-2801-4970-bb65-3c1fede4d0c3">
+<h2 class="font-alt xepan-component xepan-editable-text mce-content-body modules-heading" xepan-component-name="heading" style="position: relative; display: block;" text-color="" data-extra-classes="modules-heading" id="xepan-44db938a-b09e-4a5d-ba17-bfab0e5b4b30" contenteditable="false">ACCOUNTS<br></h2>
+<span xepan-component="xepan/cms/Tool_Image" xepan-component-name="Image" class="xepan-component modules-icon" style="display: table;" text-color="" data-extra-classes="modules-icon" scrollamount="" id="xepan-a0091342-6a51-43ee-e66a-00e100ec8db6"><img src="images/modules/th2.jpg" style="max-width:100%; height: 100%; width:100%; height: inherit" data-extra-classes="" alt="Image" class="ui-resizable"></span><p class="xepan-component xepan-editable-text mce-content-body hr-text" xepan-component-name="text" style="position: relative; display: block;" text-color="" data-extra-classes="hr-text" scrollamount="" id="xepan-b932b21e-d7da-4412-b413-8482fbda9b70" contenteditable="false"><strong>﻿</strong>Account in Epan is really unique, designed purely for non-accounts persons but still end reports are complete accounting books compatible.<br>﻿.<br>&nbsp;<br><br></p>
+<ul class="xepan-component" id="xepan-08417a37-98e7-40d3-e6b5-8542793b5579" text-color="" style="display: block; margin-top: 23px;" scrollamount="">
+<li>Pre-defined transactions you just need to run ie "Payment given to party by bank" That any body can do, will not ask DR/CR just Bank/Party/Charges If Any/Discounts Received etc and accounts entries are done.</li>
+<li>Configurations to create such pre-defined transaction&nbsp;for later transaction&nbsp;feeding of accounts. Create once and let the system use by any non-accountant.</li>
+<li>Tightly integrated with Commerce.</li>
+<li>Multi currency system,&nbsp;still&nbsp;reports in&nbsp;your&nbsp;default currency.</li>
+<li>Balance sheet, Profit &amp; Loss statement, Ledger Statements all.</li>
+</ul>
+</div>
+
+
+
+</div>
+<div class="col-sm-6 xepan-component xepan-sortable-component ui-sortable left-column animation-element slide-left" xepan-component-name="left column" text-color="" style="border-width: 1px; border-style: groove; border-color: rgb(238, 238, 238); width: 48%; margin-right: 13px;" data-extra-classes="left-column" scrollamount="" id="xepan-b01910c6-dee2-4df5-b409-c70cf2202b6a">
+
+
+<div xepan-component="xepan/cms/Tool_Container" emptytext="Container" style="width: 85%; margin: 0px auto; height: auto;" xepan-component-name="Container" class="xepan-component xepan-sortable-component xepan-cms-container ui-sortable features-container" text-color="" data-extra-classes="features-container" scrollamount="" id="xepan-330c56f9-c280-4d09-bd9c-b313e1eea233">
+<h2 class="font-alt xepan-component xepan-editable-text mce-content-body modules-heading" xepan-component-name="heading" style="position: relative; display: block;" text-color="" data-extra-classes="modules-heading" id="xepan-07c01c92-0aae-4004-9f8c-bc377de92ec2" contenteditable="false">MARKETING<br></h2>
+<span xepan-component="xepan/cms/Tool_Image" xepan-component-name="Image" class="xepan-component modules-icon" style="display: table;" text-color="" data-extra-classes="modules-icon" scrollamount="" id="xepan-48306211-e7d5-4a16-8a36-5cd86d33d3cd"><img src="images/modules/go-back--gallery-for--marketing-icon-png-23.png" style="max-width:100%; height: 100%; width:100%; height: inherit" data-extra-classes="" alt="Image" class="ui-resizable"></span><p class="xepan-component xepan-editable-text mce-content-body hr-text" xepan-component-name="text" style="position: relative; display: block; margin-top: 16px;" text-color="" data-extra-classes="hr-text" scrollamount="" id="xepan-41b2cdd9-0fe2-4666-cf52-b719c59c7f4d" contenteditable="false">Covers almost every aspect of marketing and sales activities. Inbound as well as outbound activities<br></p>
+<ul class="xepan-component" id="xepan-85a25a4a-4018-407c-cf85-ec15fb0ad4f7" text-color="" style="display: block; margin-top: 36px;" scrollamount="">
+<li>Create beautiful newsletters and send as and when required or in campaigns.</li>
+<li>Create Date based campaign or</li>
+<li>Subscription day based campaign (&nbsp;Newsletter a on day1, Newsletter y on day 15 from subscribe etc )</li>
+<li>Track if they visited your website/link from newsletter. System adds unique score to them and prioritise such leads to take special care.</li>
+<li>Cold calling is managed with TeleCalling section. Store complete communication history from both sides. Keeps knowledge and data to system not persons. Never lose a lead due to employee leaving.</li>
+</ul>
+</div>
+
+<div xepan-component="xepan/cms/Tool_Container" emptytext="Container" style="width: 100%; margin: 30px auto 0px; background-color: rgb(255, 255, 255);" xepan-component-name="Container" class="xepan-component xepan-sortable-component xepan-cms-container ui-sortable arrow_box" text-color="" scrollamount="" data-extra-classes="arrow_box" id="xepan-0250ea24-f5ca-46d6-9534-887b30c8db61"><span xepan-component="xepan/cms/Tool_Image" xepan-component-name="Image" class="xepan-component" style="display: table; width: 80%; margin-left: 59px; margin-top: 20px; height: 300px; overflow: hidden;" text-color="" data-extra-classes="" scrollamount="" id="xepan-5d89eb14-a68a-46a7-af0f-f75062ad6268"><img src="assets/menumarketing.png" style="max-width:100%; height: 100%; width:100%; height: inherit" data-extra-classes="thumbnail" alt="Image" class="ui-resizable thumbnail"></span></div>
+
+</div>
+<div class="col-sm-6 xepan-component xepan-sortable-component ui-sortable left-column animation-element1 slide-left" xepan-component-name="left column" text-color="" style="border-width: 1px; border-style: groove; border-color: rgb(238, 238, 238); width: 48%; margin-right: 13px; margin-left: 21px; margin-bottom: 20px;" data-extra-classes="left-column" scrollamount="" id="xepan-4e7f7e2c-2c37-42c3-ea85-3723c953f174">
+
+
+<div xepan-component="xepan/cms/Tool_Container" emptytext="Container" style="width: 100%; margin: 30px auto 0px; background-color: rgb(255, 255, 255);" xepan-component-name="Container" class="xepan-component xepan-sortable-component xepan-cms-container ui-sortable arrow_box1" text-color="" scrollamount="" data-extra-classes="arrow_box1" id="xepan-496a5572-a077-44ce-c59e-9e86bb17ee7d"><span xepan-component="xepan/cms/Tool_Image" xepan-component-name="Image" class="xepan-component" style="display: table; width: 80%; margin-left: 59px; margin-top: 20px; height: 300px; overflow: hidden;" text-color="" data-extra-classes="" scrollamount="" id="xepan-fdcedc9e-bcab-4427-e22b-b218940b6ff2"><img src="assets/menuproduction.png" style="max-width:100%; height: 100%; width:100%; height: inherit" data-extra-classes="thumbnail" alt="Image" class="ui-resizable thumbnail"></span></div>
+<div xepan-component="xepan/cms/Tool_Container" emptytext="Container" style="width: 85%; margin: 28px auto 0px; height: auto;" xepan-component-name="Container" class="xepan-component xepan-sortable-component xepan-cms-container ui-sortable features-container" text-color="" data-extra-classes="features-container" scrollamount="" id="xepan-9d562810-2e5e-4334-e77a-4a750647cd1c">
+<h2 class="font-alt xepan-component xepan-editable-text mce-content-body modules-heading" xepan-component-name="heading" style="position: relative; display: block;" text-color="" data-extra-classes="modules-heading" id="xepan-7fd10a82-9dfd-4413-903a-57ccadef958f" contenteditable="false">PRODUCTION CHAIN</h2>
+<span xepan-component="xepan/cms/Tool_Image" xepan-component-name="Image" class="xepan-component modules-icon" style="display: table;" text-color="" data-extra-classes="modules-icon" scrollamount="" id="xepan-e7d8c19d-e07c-4ec6-a0d6-c68cc7958ca1"><img src="images/modules/th.jpg" style="max-width:100%; height: 100%; width:100%; height: inherit" data-extra-classes="" alt="Image" class="ui-resizable"></span><p class="xepan-component xepan-editable-text mce-content-body hr-text" xepan-component-name="text" style="position: relative; display: block; margin-top: 3px;" text-color="" data-extra-classes="hr-text" scrollamount="" id="xepan-7540bec3-9f1c-45d7-8dd5-66513843fa0b" contenteditable="false">Production job cards are created and managed from online as well as offline Sales Orders.<br>﻿.<br>&nbsp;<br><br></p>
+<ul class="xepan-component" id="xepan-39dcce3f-883b-49ac-a684-d52d5ff43447" text-color="" style="display: block; margin-top: 28px;" scrollamount="">
+<li>Online and Offline seamless job cards for departments.</li>
+<li>Manages Outsources Process</li>
+<li>Creates next department job card when finished in previous department.</li>
+<li>Sends proper order specifications and user choices, No more ambiguity.</li>
+<li>Track instantly where a users order is in which state.</li>
+</ul>
+</div>
+
+
+
+</div>
+<div class="col-sm-6 xepan-component xepan-sortable-component ui-sortable left-column animation-element slide-left" xepan-component-name="left column" text-color="" style="border-width: 1px; border-style: groove; border-color: rgb(238, 238, 238); width: 48%; margin-right: 13px;" data-extra-classes="left-column" scrollamount="" id="xepan-8c34fd36-689b-46f2-9d7f-11d9cb7a35d0">
+
+
+<div xepan-component="xepan/cms/Tool_Container" emptytext="Container" style="width: 85%; margin: 0px auto; height: auto;" xepan-component-name="Container" class="xepan-component xepan-sortable-component xepan-cms-container ui-sortable features-container" text-color="" data-extra-classes="features-container" scrollamount="" id="xepan-320e1362-b9de-4f34-96ec-3c8ed874c1f3">
+<h2 class="font-alt xepan-component xepan-editable-text mce-content-body modules-heading" xepan-component-name="heading" style="position: relative; display: block;" text-color="" data-extra-classes="modules-heading" id="xepan-9237a9d8-b582-45a5-e141-220196c43c7b" contenteditable="false">SUPPORT</h2>
+<span xepan-component="xepan/cms/Tool_Image" xepan-component-name="Image" class="xepan-component modules-icon" style="display: table;" text-color="" data-extra-classes="modules-icon" scrollamount="" id="xepan-feb6f2dc-145f-4a7d-910a-cc3d7ac906bc"><img src="images/modules/go-back--gallery-for--marketing-icon-png-23.png" style="max-width:100%; height: 100%; width:100%; height: inherit" data-extra-classes="" alt="Image" class="ui-resizable"></span><p class="xepan-component xepan-editable-text mce-content-body hr-text" xepan-component-name="text" style="position: relative; display: block; margin-top: 16px;" text-color="" data-extra-classes="hr-text" scrollamount="" id="xepan-3490b7c0-8545-478f-b8f2-84b072118898" contenteditable="false">Epan has tightly integrated email based support system. Now provide support to your customers just an email away.<br></p>
+<ul class="xepan-component" id="xepan-fd889779-e03e-44e1-a663-b123beb34f04" text-color="" style="display: block; margin-top: 25px;" scrollamount="">
+<li>Multiple support emails defined.</li>
+<li>Auto responce and ticket&nbsp;generate.</li>
+<li>Keep all ticket communication in one channel.</li>
+<li>Configure to reject non-registered emails ids to create ticket.</li>
+<li>Assign ticket to employee with tasks.</li>
+</ul>
+</div>
+
+<div xepan-component="xepan/cms/Tool_Container" emptytext="Container" style="width: 100%; margin: 30px auto 0px; background-color: rgb(255, 255, 255);" xepan-component-name="Container" class="xepan-component xepan-sortable-component xepan-cms-container ui-sortable arrow_box" text-color="" scrollamount="" data-extra-classes="arrow_box" id="xepan-79ddc17b-67de-4ea4-b9ea-16728218f9f4"><span xepan-component="xepan/cms/Tool_Image" xepan-component-name="Image" class="xepan-component" style="display: table; width: 80%; margin-left: 59px; margin-top: 20px; height: 300px; overflow: hidden;" text-color="" data-extra-classes="" scrollamount="" id="xepan-054b6c01-b36c-4042-c2eb-d4f7ed122f1c"><img src="assets/crm.png" style="max-width:100%; height: 100%; width:100%; height: inherit" data-extra-classes="thumbnail" alt="Image" class="ui-resizable thumbnail"></span></div>
+
+</div>
+<div class="col-sm-6 xepan-component xepan-sortable-component ui-sortable left-column animation-element1 slide-left" xepan-component-name="left column" text-color="" style="border-width: 1px; border-style: groove; border-color: rgb(238, 238, 238); width: 48%; margin-right: 13px; margin-left: 21px; margin-bottom: 20px;" data-extra-classes="left-column" scrollamount="" id="xepan-b83a8585-195e-408d-bf24-6d0c78a05781">
+
+
+<div xepan-component="xepan/cms/Tool_Container" emptytext="Container" style="width: 100%; margin: 30px auto 0px; background-color: rgb(255, 255, 255);" xepan-component-name="Container" class="xepan-component xepan-sortable-component xepan-cms-container ui-sortable arrow_box1" text-color="" scrollamount="" data-extra-classes="arrow_box1" id="xepan-77c501d0-89e8-4483-b941-1515fbeb6e54"><span xepan-component="xepan/cms/Tool_Image" xepan-component-name="Image" class="xepan-component" style="display: table; width: 80%; margin-left: 59px; margin-top: 20px; height: 300px; overflow: hidden;" text-color="" data-extra-classes="" scrollamount="" id="xepan-bd8c5763-91f3-42f6-ccdf-09fb30b196ce"><img src="assets/website.png" style="max-width:100%; height: 100%; width:100%; height: inherit" data-extra-classes="thumbnail" alt="Image" class="ui-resizable thumbnail"></span></div>
+<div xepan-component="xepan/cms/Tool_Container" emptytext="Container" style="width: 85%; margin: 28px auto 0px; height: auto;" xepan-component-name="Container" class="xepan-component xepan-sortable-component xepan-cms-container ui-sortable features-container" text-color="" data-extra-classes="features-container" scrollamount="" id="xepan-19e5e294-e35f-496f-94df-ce939229761d">
+<h2 class="font-alt xepan-component xepan-editable-text mce-content-body modules-heading" xepan-component-name="heading" style="position: relative; display: block;" text-color="" data-extra-classes="modules-heading" id="xepan-3d2d0b14-f2d2-4579-b9c9-f848755ae798" contenteditable="false">WEB &amp; E-COMMERCE BUILDER</h2>
+<span xepan-component="xepan/cms/Tool_Image" xepan-component-name="Image" class="xepan-component modules-icon" style="display: table;" text-color="" data-extra-classes="modules-icon" scrollamount="" id="xepan-72471241-11e3-47a9-b0eb-b742717a32b7"><img src="images/modules/th3.jpg" style="max-width:100%; height: 100%; width:100%; height: inherit" data-extra-classes="" alt="Image" class="ui-resizable"></span><p class="xepan-component xepan-editable-text mce-content-body hr-text" xepan-component-name="text" style="position: relative; display: block; margin-top: 3px;" text-color="" data-extra-classes="hr-text" scrollamount="" id="xepan-adb43962-8742-4b16-def1-c887198ae0e5" contenteditable="false">A highly customisable and Drag and Drop based unique Website and ERP builder.<br>﻿.<br>&nbsp;<br><br></p>
+<ul class="xepan-component" id="xepan-d655ad9d-d8eb-4e80-c850-35a22b5767f9" text-color="" style="display: block; margin-top: 37px;" scrollamount="">
+<li>Tightly integrated with backend ERP.</li>
+<li>Available a number of free and premium templates to get started.</li>
+<li>No limits, Any Html website can be converted to drag and drop based Epan template.</li>
+<li>Highly configurable options for each component.</li>
+<li>Controll complete CSS/JS/HTML, even can override components HTML.</li>
+<li>Define and save layouts for re-use.</li>
+<li>Create any sort of custom forms and start collecting data, send email notifications to admin and auto reply to visitor.</li>
+<li>Create lead from custom form and associate with category, this starts sending them newsletters as per defined campaign for that category.</li>
+</ul>
+</div>
+
+
+
+</div>
+
+
+</div>
+<div xepan-component="xepan/cms/Tool_Columns" style="min-height:20px;" xepan-component-name="Row/Columns" class="row xepan-component" id="xepan-1f265335-3a87-4245-eb76-11327ffd24e4" text-color="">
+  
+  <div xepan-component="xepan/cms/Tool_Column" emptytext="Column 4" data-toolcolumnclass="xepan-tool-column" data-lg="6" data-md="6" data-sm="12" data-xs="12" xepan-component-name="Column" class="xepan-cms-column xepan-sortable-component xepan-component ui-sortable col-lg-6 col-md-6 col-sm-12 col-xs-12 left-column animation-element slide-left" id="xepan-6db2817d-ff75-4671-f934-f0e83397024e" text-color="" data-extra-classes="left-column"><div id="xepan-0f15f915-4880-49fa-988c-bafea08d2310" xepan-component="xepan/cms/Tool_Container" emptytext="Container" style="width: 90%; margin: 0px auto; height: 340px; overflow: hidden;" xepan-component-name="Container" class="xepan-component xepan-sortable-component xepan-cms-container ui-sortable" text-color="" scrollamount="">
+<h2 class="font-alt xepan-component xepan-editable-text mce-content-body modules-heading" xepan-component-name="heading" style="position: relative; margin-right: 10px; display: block;" id="xepan-23b93ce6-35f8-4421-b10b-e7f818f40b65" text-color="" data-extra-classes="modules-heading" contenteditable="false">Centralised Communication<br></h2>
+<span id="xepan-4678ec8f-a4f7-4dd2-9bf5-0ae5c29d7d63" xepan-component="xepan/cms/Tool_Image" xepan-component-name="Image" class="xepan-component modules-icon" style="display: table; margin-top: -1px; padding-top: 2%;" text-color="" data-extra-classes="modules-icon" scrollamount=""><img src="images/modules/th4.jpg" style="max-width:100%; height: 100%; width:100%; height: inherit" data-extra-classes="" alt="Image" class="ui-resizable"></span><p class="xepan-component xepan-editable-text mce-content-body" xepan-component-name="text" style="position: relative; display: block;" id="xepan-8805ec38-70b8-4e0e-9c1b-a06404ec2cc0" text-color="" contenteditable="false">Epan gives everything a company may want in one panel and in best way it can be. and same goes with communications too.<br><br></p>
+<ul class="xepan-component" id="xepan-cab1b300-942d-4a4c-c8f7-871d1a27634f" text-color="" style="display: block;" scrollamount="">
+<li>Manage multiple emails accounts in Epan</li>
+<li>Post based permission to see and send emails from email accounts.</li>
+<li>Create Communications from direct with any contact from EPAN.</li>
+<li>See communication history instantly.</li>
+<li>Track employees activity to manage better sales and support.</li>
+<li>Instantly create next followups to make sales process perfect.</li>
+</ul>
+</div></div>
+<div xepan-component="xepan/cms/Tool_Column" emptytext="Column 4" data-toolcolumnclass="xepan-tool-column" data-lg="6" data-md="6" data-sm="12" data-xs="12" xepan-component-name="Column" class="xepan-cms-column xepan-sortable-component xepan-component ui-sortable col-lg-6 col-md-6 col-sm-12 col-xs-12 arrow_box2 animation-element1 slide-left" id="xepan-6098e1af-8984-4aec-a7c1-ec9b7911cc13" text-color="" scrollamount="" data-extra-classes="arrow_box2"><div xepan-component="xepan/cms/Tool_Image" xepan-component-name="Image" class="xepan-component modules-image" scrollamount="" text-color="" id="xepan-7dd12e2c-f000-4b66-9802-0f4fe9facf96" data-extra-classes="modules-image" style="display: block; width: 443px; height: 300px; overflow: hidden; margin-top: 15px; margin-bottom: 15px; margin-left: 52px;"><img src="websites/www/assets/communication_screenshot.png" style="max-width:100%; height: 100%; width:100%" data-extra-classes="thumbnail" alt="Image" class="ui-resizable center-block thumbnail"></div></div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+</div>
+</section><strong><strong>
+
+</strong>
+
+</strong>
