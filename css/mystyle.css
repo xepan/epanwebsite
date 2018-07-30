@@ -677,17 +677,17 @@ padding:0px !important;
 }
 
 .arrow_box1 span {
-width: 85% !important;
-margin-left: 25px !important;
+width: 30% !important;
+margin-left: 125px !important;
 margin-top: 0px !important;
-height: 150px !important;
+height: 100px !important;
 padding-top: 20px !important;
 }
 
 .arrow_box1 {
 	position: relative;
-	background-color: #4e4e4e !important;
-	\\border: 4px solid #4e4e4e;
+	background-color: #fff !important;
+	border: 4px solid #4e4e4e;
   	margin-top:0px !important;
   width:90% !important;
 }
@@ -937,3 +937,14 @@ background-color: #275c8b;
 .navbar-nav li a li {
   color:#000 !important;
 }
+
+.agency-form {
+    padding:20px;
+    box-sizing: border-box !important;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+}
+
+.thumbnail {
+  border:0px !important;
+}
+  
