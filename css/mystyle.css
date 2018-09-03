@@ -278,7 +278,7 @@ border:2px solid red;
 }
 
 .post-thumbnail img {
-	width:800px;
+	width:auto;
 }
 .printing-custom-form form.atk4_form input{
  width: 90% !important;
