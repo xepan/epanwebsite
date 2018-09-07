@@ -1,0 +1,118 @@
+<div id="{$_name}" class="row multi-columns-row post-columns {$class}" style="{$style}" >
+
+  {rows}{row}
+
+  <div class="col-sm-12 col-md-12 col-lg-12" style="margin-bottom:40px; max-height:300px;">
+
+    <div  class="post mb-20">
+
+		<div class="col-sm-12 col-md-4 col-lg-4">
+
+      {image_wrapper}
+
+      <div class="post-thumbnail">
+
+        <a href="{$url}">
+
+          <img src="{image}websites/titan/www/assets/images/post-1.jpg{/image}" alt="Feature Image">
+
+        </a>
+
+      </div>
+
+      {/image_wrapper}
+
+	   </div>
+
+	  <div class="col-sm-12 col-md-8 col-lg-8">
+
+      {title_wrapper}
+
+      <div class="post-header font-alt" style="position: relative;">
+
+        <h2 class="post-title">
+
+          <a href="{$url}" data-mce-href="#">{$title}
+
+          </a>
+
+          <br data-mce-bogus="1">
+
+        </h2>
+
+        <div class="post-meta">By 
+
+          <a href="#" data-mce-href="#">{created_by}Administrator{/created_by}
+
+          </a> | {created_at_date}23 November {/created_at_date} | {comment_count}3{/} Comments
+
+        </div>
+
+      </div>
+
+      {/title_wrapper}
+
+      {desription_wrapper}
+
+      <div class="post-entry" style="position: relative;" contenteditable="false">{$short_description} ...
+
+      </div>{/desription_wrapper}
+
+      <div class="post-more " style="position: relative;" contenteditable="false">
+
+        <p>
+
+          <a class="more-link" href="{$url}" data-mce-href="#">Read more
+
+          </a>
+
+          <br data-mce-bogus="1">
+
+        </p>
+
+      </div>
+
+    </div>
+
+    {socialshare_wrapper}
+
+    <div id="postshare{$id}">{$socialshare}
+
+    </div>{/socialshare_wrapper} </div>
+
+    <div style="padding-bottom:25px;">
+
+    </div>{$micro_data}
+  </div>
+    
+
+  {/row}{/rows}
+ <hr>
+
+  {not_found}
+
+  <div role="alert" class="full-width alert alert-warning">
+
+    <strong class="glyphicon glyphicon-warning-sign"> Warning!
+
+      <span> {$not_found_message}
+
+      </span>
+
+    </strong>
+
+  </div>
+
+  {/}
+  
+  
+
+  {paginator_wrapper}
+
+  <div style="float:none; clear:both" class="xshop-item-paginator">{$Paginator}
+
+  </div>
+
+  {/}  
+
+</div>
