@@ -1,6 +1,6 @@
  /*Define Your Custom CSS*/
 .subscribe-heading h2{
-font-family:"Roboto Condensed", sans-serif!important;
+font-family:"book antiqua", palatino, serif;
 }
 
 .event-blog img{
@@ -248,7 +248,7 @@ border:2px solid red;
 
 .hover-effect {
       background-color:#85adad;
-  	box-shadow: 0px 0px 40px #000000;
+      box-shadow: 0px 0px 40px #000000;
     z-index: 2;
     -webkit-transition: all 200ms ease-in;
     -webkit-transform: scale(1.1);
@@ -278,7 +278,7 @@ border:2px solid red;
 }
 
 .post-thumbnail img {
-	width:auto;
+    width:auto;
 }
 .printing-custom-form form.atk4_form input{
  width: 90% !important;
@@ -347,7 +347,7 @@ border:2px solid red;
 margin-top:0px!important;
 }
 .contact .atk-actions{
-	    float: left;
+        float: left;
     margin-top: 30px;
    
     margin-left: 41%;
